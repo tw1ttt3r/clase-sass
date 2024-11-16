@@ -1,0 +1,20 @@
+@use 'variables' as vars;
+@use 'mixins' as mx;
+
+.container_center {
+    @include mx.flex_center_hv;
+    @include mx.overflow_x;
+    flex-wrap: wrap;
+    width: vars.$full_viewport_width;
+    height: vars.$full_viewport_height;
+
+    & > .card {
+        padding: 16px;
+        display: flex;
+
+        & > img {
+            width: 50%;
+            align-self: center;
+        }
+    }
+}

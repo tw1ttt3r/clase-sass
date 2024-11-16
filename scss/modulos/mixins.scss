@@ -1,0 +1,23 @@
+@mixin container_flex {
+    display: flex;
+}
+
+@mixin container_grid {
+    display: grid;
+}
+
+@mixin overflow_x {
+    overflow-x: auto;
+}
+
+@mixin flex_center_hv {
+    @include container_flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_initial {
+    @include container_flex;
+    justify-content: start;
+    align-items: start;
+}
